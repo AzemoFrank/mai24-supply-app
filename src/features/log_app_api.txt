@@ -1,0 +1,137 @@
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé...
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 08:53:21.557172
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 08:55:21.006357
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 08:57:07.482919
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:08:37.496387
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:20:26.369733
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:22:04.834890
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:23:32.873041
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:25:18.423965
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:26:57.284733
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:29:43.788138
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:30:59.682529
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:33:17.632109
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:33:43.331370
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:36:22.636137
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:38:04.995439
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:39:34.877438
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:42:14.091129
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:42:39.910803
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:43:32.211052
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:43:59.397160
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:45:01.431201
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:49:26.013354
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:50:54.095484
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:51:24.807610
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 09:54:42.933571
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 10:14:00.174081
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 10:14:34.375420
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 11:11:14.009246
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 11:13:16.791215
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 11:13:43.618598
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 11:16:26.628575
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 11:21:37.150567
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 11:23:26.332488
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 11:38:15.839132
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 11:38:31.391441
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-11 11:39:53.574627
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 12:38:18.108196
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 12:50:22.809842
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 12:52:35.001752
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 12:54:17.847275
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 12:56:33.454282
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 13:00:06.983444
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 13:06:42.617089
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 13:18:36.039306
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 13:20:16.117856
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 13:23:01.492871
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 13:27:22.177687
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 13:27:34.291917
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 13:30:03.029933
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 13:31:26.778313
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 13:32:39.749994
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 13:36:18.302242
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 13:38:33.731338
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 13:45:30.447357
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 13:53:32.515578
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 13:56:34.477439
+Entraînement des données terminé avec succès.
+Utilisateur: ismael Date: 2024-09-14 14:23:57.280165

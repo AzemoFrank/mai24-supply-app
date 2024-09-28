@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: supply-app
+    env: docker
+    region: frankfurt
+    plan: free
+    branch: main
+    dockerfilePath: ./DockerFile
+    dockerContext: .
+    envVars:
+      - key: PORT
+        value: 8000
+    healthCheckPath: /health
+    numInstances: 1

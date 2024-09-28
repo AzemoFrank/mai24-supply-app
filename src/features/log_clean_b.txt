@@ -1,0 +1,22 @@
+------------- debut clean data----------------- :
+La table data_scrapped_brut n'existe pas dans la base de donnees !!!
+------------- debut clean data----------------- :
+Aperçu des donnees brutes :   categorie_bis                companies                       noms  ...                                               site nombre_pages date_scrap
+0          bank  Younited Credit Reviews                     Steven  ...  https://www.trustpilot.com/review/www.younited...           38 2024-09-28
+1          bank  Younited Credit Reviews  Adrian Claudiu Ursu-Brown  ...  https://www.trustpilot.com/review/www.younited...           38 2024-09-28
+2          bank  Younited Credit Reviews               Eric BRIVOAL  ...  https://www.trustpilot.com/review/www.younited...           38 2024-09-28
+3          bank  Younited Credit Reviews                      Islam  ...  https://www.trustpilot.com/review/www.younited...           38 2024-09-28
+4          bank  Younited Credit Reviews      Bernard Joseph Benoza  ...  https://www.trustpilot.com/review/www.younited...           38 2024-09-28
+
+[5 rows x 12 columns]
+Le nettoyage des donnees est termine: (b_data_clean):
+------------- debut clean data----------------- :
+Aperçu des donnees brutes :   categorie_bis                companies  ... nombre_pages date_scrap
+0          bank  Younited Credit Reviews  ...           38 2024-09-28
+1          bank  Younited Credit Reviews  ...           38 2024-09-28
+2          bank  Younited Credit Reviews  ...           38 2024-09-28
+3          bank  Younited Credit Reviews  ...           38 2024-09-28
+4          bank  Younited Credit Reviews  ...           38 2024-09-28
+
+[5 rows x 12 columns]
+Le nettoyage des donnees est termine: (b_data_clean):
