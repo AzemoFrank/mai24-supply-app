@@ -22,7 +22,7 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/token")
 # Obtenir la clé secrète à partir de l'environnement
 SECRET_KEY = os.getenv("SECRET_KEY", "default_secret_key")
 ALGORITHM = "HS256"
-JSON_FILE_PATH = os.path.expanduser("src/users/users.json")
+USERS_JSON_FILE_PATH = os.getenv("USERS_JSON_FILE_PATH", "data/users.json")
 
 def hash_password(password: str) -> str:
     return sha256(password.encode()).hexdigest()
@@ -40,11 +40,11 @@ def create_access_token(data: dict, expires_delta: timedelta = None):
     return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
 
 def load_users() -> List[UserIn]:
-    if not os.path.exists(JSON_FILE_PATH):
-        with open(JSON_FILE_PATH, "w") as file:
+    if not os.path.exists(USERS_JSON_FILE_PATH):
+        with open(USERS_JSON_FILE_PATH, "w") as file:
             json.dump([], file)
     
-    with open(JSON_FILE_PATH, "r") as file:
+    with open(USERS_JSON_FILE_PATH, "r") as file:
         users_data = json.load(file)
     
     return [UserIn(**user) for user in users_data]
@@ -75,7 +75,7 @@ def get_current_user(token: str = Depends(oauth2_scheme)) -> UserOut:
 def save_user(user):
     users = load_users()
     users.append(user)
-    with open(JSON_FILE_PATH, "w") as file:
+    with open(USERS_JSON_FILE_PATH, "w") as file:
         json.dump([user.dict() for user in users], file)
 
 async def clean_data() -> List[CleanedDataItem]:

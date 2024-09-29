@@ -8,7 +8,7 @@ import os
 def f_data_clean():
     """Fonction pour nettoyer les données à partir d'un fichier brut."""
     
-    fichier_b = open("src/features/log_clean_b.txt", "a")
+    fichier_b = open("logs/clean_a_logs.txt", "a")
     print("------------- début clean data----------------- :", file=fichier_b)
 
     # Fonction pour extraire la note en utilisant une expression régulière

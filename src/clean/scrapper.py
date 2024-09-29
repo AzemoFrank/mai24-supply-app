@@ -148,11 +148,11 @@ def scrape_second_phase(df_liens_filtré: pd.DataFrame) -> pd.DataFrame:
     df_loaded = pd.read_csv(latest_file)
 
     print("------------------------------------------------------------------------")
-    print('#### Résultats: données brutes scrapées:', file=open("src/data/texte.txt", "w"))
+    print('#### Résultats: données brutes scrapées:', file=open("logs/scrapper_logs.txt", "w"))
     print("Voici le Dataframe des données brutes scrapées (données non traitées). \nD'après ce que nous voyons ci-dessus, les données scrapées nécessitent un traitement supplémentaire avec text mining. Nous allons aussi procéder à la création de nouvelles features engineering.")
     print(df_loaded['categorie_bis'].value_counts())
     print(f"La taille du df brut: {df_loaded.shape}")
-    print(f"Webscraping terminé le: {date_actuelle}", file=open("src/data/texte.txt", "w"))
+    print(f"Webscraping terminé le: {date_actuelle}", file=open("logs/scrapper_logs.txt", "w"))
     print(f"Webscraping terminé le: {date_actuelle}")
 
     df_sample = df.head(80)  # Échantillon des 80 premières lignes

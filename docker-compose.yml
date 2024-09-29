@@ -1,0 +1,42 @@
+version: '3'
+services:
+  airflow:
+    build:
+      context: .
+      dockerfile: Dockerfile.airflow
+    command: standalone
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - SCRAPPER_JSON_OUTPUT_PATH=/opt/airflow/data/scraping_output.json
+      - DUCKDB_PATH=/opt/airflow/data/supply_app.duckdb
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/opt/airflow/data
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+    healthcheck:
+      test: ["CMD", "airflow", "jobs", "check"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  supply_app:
+    build:
+      context: .
+      dockerfile: Dockerfile.supply_app
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - SCRAPPER_JSON_OUTPUT_PATH=/app/data/scraping_output.json
+      - USERS_JSON_FILE_PATH=/app/data/users.json
+      - DUCKDB_PATH=/app/data/supply_app.duckdb
+      - SECRET_KEY=de4fcb65-beb9-426b-8cc5-8130f77d27a3
+    volumes:
+      - ./data:/app/data
+
+volumes:
+  data:
+  airflow_logs:

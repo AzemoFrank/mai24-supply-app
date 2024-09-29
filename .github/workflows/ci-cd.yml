@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  deploy-airflow-dag:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,20 +16,34 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.12'
+        python-version: '3.8'
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r src/requirements.txt
+        pip install apache-airflow
 
-  docker-build:
-    needs: build
+    - name: Deploy DAG to Airflow
+      env:
+        AIRFLOW_WEBSERVER_HOST: ${{ secrets.AIRFLOW_WEBSERVER_HOST }}
+        AIRFLOW_WEBSERVER_PORT: ${{ secrets.AIRFLOW_WEBSERVER_PORT }}
+        AIRFLOW_USERNAME: ${{ secrets.AIRFLOW_USERNAME }}
+        AIRFLOW_PASSWORD: ${{ secrets.AIRFLOW_PASSWORD }}
+      run: |
+        mkdir -p ~/airflow/dags
+        cp dags/supply_chain_dag.py ~/airflow/dags/
+        airflow dags list
+        airflow dags unpause supply_chain_pipeline
+
+  docker-build-push:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v1
 
     - name: Log in to Docker Hub
       uses: docker/login-action@v2
@@ -37,10 +51,10 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: Build Docker image
-      run: |
-        docker-compose build
-
-    - name: Push Docker image
-      run: |
-        docker-compose push
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        file: ./Dockerfile
+        push: true
+        tags: mai24_mlops_supply_app:latest

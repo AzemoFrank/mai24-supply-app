@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
-from src.utils.routes import user_routes, admin_routes
+from src.utils.routes_duckdb import user_routes, admin_routes
 import warnings
 from urllib3.exceptions import InsecureRequestWarning
 

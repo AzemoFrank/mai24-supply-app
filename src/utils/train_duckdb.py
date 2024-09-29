@@ -12,7 +12,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, classification_report
 import certifi
-import ssl
+import ssl, os
 import duckdb
 
 # Configurez le SSL pour utiliser les certificats certifi
@@ -37,7 +37,8 @@ def prepare_data() -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, Labe
         print("---------------", datetime.now(), "--------------", file=fichier_t)
 
         # Connexion à DuckDB
-        con = duckdb.connect('supply_app.duckdb')
+        db_path = os.getenv('DUCKDB_PATH', 'data/supply_app.duckdb')
+        con = duckdb.connect(db_path)
 
         # Verification de l'existence de la table data_scraped_traite_traduit
         if con.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='data_scraped_traite_traduit'").fetchone():

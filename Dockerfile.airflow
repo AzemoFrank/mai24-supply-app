@@ -1,0 +1,32 @@
+FROM apache/airflow:2.5.1
+
+USER root
+
+# Définition du répertoire de travail
+WORKDIR /opt/airflow
+
+# Création des répertoires nécessaires
+RUN mkdir -p logs plugins data scripts
+
+# Copie des scripts dans l'image
+COPY /src/clean/scrapper_duckdb.py scripts/scrapper_duckdb.py
+COPY /src/clean/clean_a_duckdb.py scripts/clean_a_duckdb.py
+COPY /src/clean/clean_b_duckdb.py scripts/clean_b_duckdb.py
+COPY /src/utils/train_duckdb.py scripts/train_duckdb.py
+
+# Copie directe des DAGs dans le dossier Airflow
+COPY airflow/dags dags
+
+# Changement des permissions
+RUN chown -R airflow:airflow . && \
+    chmod -R 755 .
+
+# Copier les fichiers de dépendances et installer les packages nécessaires
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Télécharger le modèle spaCy
+RUN python -m spacy download en_core_web_sm
+
+
+USER airflow

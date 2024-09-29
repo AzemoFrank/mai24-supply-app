@@ -43,10 +43,11 @@ def scrapper_first_phase(url: str, date_actuelle:str):
     reviews = [extraire_chiffres(review) for review in reviews]
 
     # Connexion à DuckDB
-    conn = duckdb.connect('supply_app.duckdb')
+    db_path = os.getenv('DUCKDB_PATH', 'data/supply_app.duckdb')
+    con = duckdb.connect(db_path)
 
     # Création de la table si elle n'existe pas
-    conn.execute("""
+    con.execute("""
         CREATE TABLE IF NOT EXISTS avis_trustpilot_liste_liens (
             marque VARCHAR,
             liens_marque VARCHAR,
@@ -58,7 +59,7 @@ def scrapper_first_phase(url: str, date_actuelle:str):
     """)
 
     # Insertion des données dans DuckDB
-    conn.execute("""
+    con.execute("""
         INSERT INTO avis_trustpilot_liste_liens (marque, liens_marque, categorie, reviews, pays, insert_dt)
         SELECT * FROM (
             SELECT 
@@ -72,7 +73,7 @@ def scrapper_first_phase(url: str, date_actuelle:str):
     """, [marque, liens_marque, categorie, reviews, pays, date_actuelle])
 
     # Récupération des données pour le retour
-    result = conn.execute("""
+    result = con.execute("""
         SELECT * 
         FROM avis_trustpilot_liste_liens
         WHERE insert_dt = ?
@@ -80,7 +81,7 @@ def scrapper_first_phase(url: str, date_actuelle:str):
     """, [date_actuelle]).fetchdf()
 
     # Fermeture de la connexion
-    conn.close()
+    con.close()
 
     return result
 
@@ -138,10 +139,11 @@ def scrapper_second_phase(df_liens_filtre, date_actuelle):
                     categorie_bis.append(lien_cat)
 
     # Connexion à DuckDB
-    conn = duckdb.connect('supply_app.duckdb')
+    db_path = os.getenv('DUCKDB_PATH', 'data/supply_app.duckdb')
+    con = duckdb.connect(db_path)
 
     # Création de la table si elle n'existe pas
-    conn.execute("""
+    con.execute("""
         CREATE TABLE IF NOT EXISTS data_scrapped_brut (
             categorie_bis VARCHAR,
             companies VARCHAR,
@@ -159,7 +161,7 @@ def scrapper_second_phase(df_liens_filtre, date_actuelle):
     """)
 
     # Insertion des données dans DuckDB
-    conn.execute("""
+    con.execute("""
         INSERT INTO data_scrapped_brut (categorie_bis, companies, noms, titre_com, commentaire, reponses, notes, date_experience, date_commentaire, site, nombre_pages, date_scrap)
         SELECT * FROM (
             SELECT 
@@ -179,30 +181,31 @@ def scrapper_second_phase(df_liens_filtre, date_actuelle):
     """, [categorie_bis, companies, noms, titre_com, commentaire, reponses, notes, date_experience, date_commentaire, site, nombre_pages, date_actuelle])
 
     # Récupération d'un échantillon pour l'affichage
-    df_sample = conn.execute("SELECT * FROM data_scrapped_brut WHERE date_scrap = ? LIMIT 80", [date_actuelle]).fetchdf()
+    df_sample = con.execute("SELECT * FROM data_scrapped_brut WHERE date_scrap = ? LIMIT 80", [date_actuelle]).fetchdf()
 
     
     print("------------------------------------------------------------------------")
-    print('#### Résultats: données brutes scrapées:', file=open("src/data/texte.txt", "w"))
+    print('#### Résultats: données brutes scrapées:', file=open("logs/scrapper_logs.txt", "w"))
     print("Voici le Dataframe des données brutes scrapées (données non traitées). \nD'après ce que nous voyons ci-dessus, les données scrapées nécessitent un traitement supplémentaire avec text mining. Nous allons aussi procéder à la création de nouvelles features engineering.")
-    print(conn.execute("SELECT categorie_bis, COUNT(*) FROM data_scrapped_brut WHERE date_scrap = ? GROUP BY categorie_bis", [date_actuelle]).fetchdf())
-    print(f"La taille du df brut: {conn.execute('SELECT COUNT(*) FROM data_scrapped_brut WHERE date_scrap = ? ', [date_actuelle]).fetchone()[0]}")
-    print(f"Webscraping terminé le: {date_actuelle}", file=open("src/data/texte.txt", "w"))
+    print(con.execute("SELECT categorie_bis, COUNT(*) FROM data_scrapped_brut WHERE date_scrap = ? GROUP BY categorie_bis", [date_actuelle]).fetchdf())
+    print(f"La taille du df brut: {con.execute('SELECT COUNT(*) FROM data_scrapped_brut WHERE date_scrap = ? ', [date_actuelle]).fetchone()[0]}")
+    print(f"Webscraping terminé le: {date_actuelle}", file=open("logs/scrapper_logs.txt", "w"))
     print(f"Webscraping terminé le: {date_actuelle}")
 
     # Fermeture de la connexion
-    conn.close()
+    con.close()
 
     return df_sample.to_dict(orient='records')
 
 def main_scrapper():
 
     # Vérifier si le fichier supply_app.duckdb existe, sinon le créer
-    db_file = 'supply_app.duckdb'
+    db_file = os.getenv('DUCKDB_PATH', 'data/supply_app.duckdb')
+
     if not os.path.exists(db_file):
         print(f"Le fichier {db_file} n'existe pas. Création d'une nouvelle base de données.")
-        conn = duckdb.connect(db_file)
-        conn.close()
+        con = duckdb.connect(db_file)
+        con.close()
     else:
         print(f"Le fichier {db_file} existe déjà.")
 
@@ -216,7 +219,7 @@ def main_scrapper():
     sample_data = scrapper_second_phase(df_liens, date_actuelle)
 
     # Écriture de la date_actuelle dans un fichier JSON
-    json_file_path = 'src/data/scraping_output.json'
+    json_file_path = os.getenv('SCRAPPER_JSON_OUTPUT_PATH', 'data/scraping_output.json')
     
     # Vérifier si le fichier existe déjà
     if os.path.exists(json_file_path):

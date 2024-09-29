@@ -13,7 +13,7 @@ def f_data_clean_2(sample_size=200):
     BATCH_SIZE = 100
 
     # Fichier log
-    fichier_c = open("src/features/log_clean_c.txt", "a")
+    fichier_c = open("logs/clean_b_logs.txt", "a")
     print("------------- début clean data: features engineering -----------------", file=fichier_c)
 
     # Vérification de la présence du fichier brut

@@ -10,7 +10,7 @@ def f_data_clean():
     """Fonction pour nettoyer les donnees à partir d'un fichier brut."""
     
      # Lecture du fichier JSON pour obtenir date_scrap_filter
-    json_file_path = 'src/data/scraping_output.json'
+    json_file_path = os.getenv('SCRAPPER_JSON_OUTPUT_PATH', 'data/scraping_output.json')
     if not os.path.exists(json_file_path):
         raise FileNotFoundError(f"Le fichier {json_file_path} n'existe pas.")
     
@@ -21,7 +21,7 @@ def f_data_clean():
     if not date_scrap_filter:
         raise ValueError("La valeur 'date_scrap_filter' n'a pas ete trouvee dans le fichier JSON.")
 
-    fichier_b = open("src/features/log_clean_b.txt", "a")
+    fichier_b = open("logs/clean_a_logs.txt", "a")
     print("------------- debut clean data----------------- :", file=fichier_b)
 
     # Fonction pour extraire la note en utilisant une expression regulière
@@ -63,7 +63,8 @@ def f_data_clean():
             return cell_value
 
     # Connexion à DuckDB
-    con = duckdb.connect('supply_app.duckdb')
+    db_path = os.getenv('DUCKDB_PATH', 'data/supply_app.duckdb')
+    con = duckdb.connect(db_path)
 
     # Verification de l'existence de la table data_scrapped_brut
     if con.execute("SELECT COUNT(*) FROM information_schema.tables WHERE table_name = 'data_scrapped_brut'").fetchone()[0] > 0:
