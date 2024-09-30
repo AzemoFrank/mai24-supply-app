@@ -31,7 +31,7 @@ def POStagging(commentt: str) -> str:
 
 def prepare_data() -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, LabelEncoder]:
     """Prépare les données pour l'entraînement et la prédiction"""
-    log_file_path = "src/features/resultats_train.txt"
+    log_file_path = "logs/resultats_train.txt"
     with open(log_file_path, "a") as fichier_t:
         print("---------------", datetime.now(), "--------------", file=fichier_t)
         
@@ -100,7 +100,7 @@ def prepare_data() -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, Labe
 
 def train_model() -> Dict[str, str]:
     """Entraîne le modèle et retourne les résultats"""
-    log_file_path = "src/features/resultats_train.txt"
+    log_file_path = "logs/resultats_train.txt"
     with open(log_file_path, "a") as fichier_t:
         print("---------------", datetime.now(), "--------------", file=fichier_t)
         
@@ -171,7 +171,7 @@ def commentaire_pred_nb(comment: str) -> str:
 
 def predict_comment(comment: str, type_acces: str) -> Dict[str, str]:
     """Effectue une prédiction et retourne les résultats en fonction du type d'accès"""
-    log_file_path = "src/features/resultats_train.txt"
+    log_file_path = "logs/resultats_train.txt"
     
     # Charger le pipeline et le LabelEncoder
     pipeline = joblib.load("src/models/pipeline_bayes_lib")

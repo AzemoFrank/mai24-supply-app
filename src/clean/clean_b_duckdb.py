@@ -33,7 +33,7 @@ def f_data_clean_2():
     # Taille des lots pour la traduction
     BATCH_SIZE = 200
 
-    json_file_path = os.getenv('SCRAPPER_JSON_OUTPUT_PATH', 'data/scraping_output.json')
+    json_file_path = os.getenv('SCRAPPER_JSON_OUTPUT_PATH', 'data/scrapping_output.json')
     if not os.path.exists(json_file_path):
         raise FileNotFoundError(f"Le fichier {json_file_path} n'existe pas.")
     
@@ -44,7 +44,8 @@ def f_data_clean_2():
     if not date_scrap_filter:
         raise ValueError("La valeur 'date_scrap_filter' n'a pas ete trouvee dans le fichier JSON.")
 
-    fichier_c = open("logs/clean_b_logs.txt", "a")
+    log_file = "/app/logs/clean_b_logs.txt"
+    fichier_c = open(log_file, "a")
     print("------------- début clean data: features engineering -----------------", file=fichier_c)
 
     db_path = os.getenv('DUCKDB_PATH', 'data/supply_app.duckdb')

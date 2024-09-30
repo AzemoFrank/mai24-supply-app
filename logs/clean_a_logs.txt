@@ -1,0 +1,10 @@
+------------- debut clean data----------------- :
+Aperçu des donnees brutes :   categorie_bis                companies  ... nombre_pages date_scrap
+0          bank  Younited Credit Reviews  ...           38 2024-09-29
+1          bank  Younited Credit Reviews  ...           38 2024-09-29
+2          bank  Younited Credit Reviews  ...           38 2024-09-29
+3          bank  Younited Credit Reviews  ...           38 2024-09-29
+4          bank  Younited Credit Reviews  ...           38 2024-09-29
+
+[5 rows x 12 columns]
+Le nettoyage des donnees est termine: (b_data_clean):

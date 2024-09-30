@@ -1,0 +1,1 @@
+[2024-09-30T10:56:09.396+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: supply_app_dag.get_token manual__2024-09-30T10:56:07.380510+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

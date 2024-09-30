@@ -1,0 +1,17 @@
+[2024-09-30T08:24:28.282+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_dag_of_the_morning.chaussure_droite manual__2024-09-30T08:24:05.742697+00:00 [queued]>
+[2024-09-30T08:24:28.320+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_dag_of_the_morning.chaussure_droite manual__2024-09-30T08:24:05.742697+00:00 [queued]>
+[2024-09-30T08:24:28.321+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-09-30T08:24:28.373+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): chaussure_droite> on 2024-09-30 08:24:05.742697+00:00
+[2024-09-30T08:24:28.391+0000] {standard_task_runner.py:60} INFO - Started process 1390 to run task
+[2024-09-30T08:24:28.407+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'my_dag_of_the_morning', 'chaussure_droite', 'manual__2024-09-30T08:24:05.742697+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/my_second_dag.py', '--cfg-path', '/tmp/tmprmtxefg4']
+[2024-09-30T08:24:28.417+0000] {standard_task_runner.py:88} INFO - Job 10: Subtask chaussure_droite
+[2024-09-30T08:24:28.464+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-09-30T08:24:28.604+0000] {task_command.py:423} INFO - Running <TaskInstance: my_dag_of_the_morning.chaussure_droite manual__2024-09-30T08:24:05.742697+00:00 [running]> on host 9c06bdfbf707
+[2024-09-30T08:24:28.865+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='my_dag_of_the_morning' AIRFLOW_CTX_TASK_ID='chaussure_droite' AIRFLOW_CTX_EXECUTION_DATE='2024-09-30T08:24:05.742697+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-30T08:24:05.742697+00:00'
+[2024-09-30T08:24:28.872+0000] {logging_mixin.py:188} INFO - Enfiler chaussure droite
+[2024-09-30T08:24:28.874+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-09-30T08:24:28.907+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=my_dag_of_the_morning, task_id=chaussure_droite, execution_date=20240930T082405, start_date=20240930T082428, end_date=20240930T082428
+[2024-09-30T08:24:28.979+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-09-30T08:24:29.068+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -69,7 +69,7 @@ def get_current_user(token: str = Depends(oauth2_scheme)) -> UserOut:
         
         return UserOut(**user.dict())  # Assurez-vous que UserOut est correctement défini
 
-    except jwt.JWTError:
+    except jwt.PyJWKError:
         raise HTTPException(status_code=401, detail="Token invalide")
 
 def save_user(user):
