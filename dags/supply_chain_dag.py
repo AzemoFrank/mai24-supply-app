@@ -3,7 +3,7 @@ from airflow.providers.docker.operators.docker import DockerOperator
 from datetime import datetime
 
 # Définir le chemin vers les scripts
-script_path = "scripts/"  # Chemin dans le conteneur
+script_path = "scripts"  # Chemin dans le conteneur
 
 with DAG(
     'supply_app_dag',
@@ -18,7 +18,7 @@ with DAG(
         image='schedul_supply_app',
         auto_remove=True,
         command=f'python {script_path}/scrapper_duckdb.py',
-        # volumes=['./data:/app/data'],
+        # volumes=['./data:/data'],
         # docker_url='unix://var/run/docker.sock',
         # network_mode='bridge',
     )
@@ -29,7 +29,7 @@ with DAG(
         image='schedul_supply_app',
         auto_remove=True,
         command=f'python {script_path}/clean_a_duckdb.py',
-        # volumes=['./data:/app/data'],
+        # volumes=['./data:/data'],
         # docker_url='unix://var/run/docker.sock',
         # network_mode='bridge',
     )
@@ -40,7 +40,7 @@ with DAG(
         image='schedul_supply_app',
         auto_remove=True,
         command=f'python {script_path}/clean_b_duckdb.py',
-        # volumes=['./data:/app/data'],
+        # volumes=['./data:/data'],
         # docker_url='unix://var/run/docker.sock',
         # network_mode='bridge',
     )
@@ -51,7 +51,7 @@ with DAG(
         image='schedul_supply_app',
         auto_remove=True,
         command=f'python {script_path}/train_duckdb.py',
-        # volumes=['./data:/app/data'],
+        # volumes=['./data:/data'],
         # docker_url='unix://var/run/docker.sock',
         # network_mode='bridge',
     )

@@ -80,11 +80,11 @@ services:
         dockerfile: DockerFile.airflow
       image: schedul_supply_app:latest
       environment:
-        - SCRAPPER_JSON_OUTPUT_PATH=/app/data/scrapping_output.json
-        - DUCKDB_PATH=/app/data/supply_app.duckdb
+        - SCRAPPER_JSON_OUTPUT_PATH=/data/scrapping_output.json
+        - DUCKDB_PATH=/data/supply_app.duckdb
       volumes:
-        - ./data:/app/data
-        - ./logs:/app/logs
+        - ./data:/data
+        - ./logs:/logs
   
   web_supply_app:
       build:
@@ -95,13 +95,13 @@ services:
         - "8000:8000"
       environment:
         - PORT=8000
-        - SCRAPPER_JSON_OUTPUT_PATH=/app/data/scrapping_output.json
-        - USERS_JSON_FILE_PATH=/app/data/users.json
-        - DUCKDB_PATH=/app/data/supply_app.duckdb
+        - SCRAPPER_JSON_OUTPUT_PATH=/data/scrapping_output.json
+        - USERS_JSON_FILE_PATH=/data/users.json
+        - DUCKDB_PATH=/data/supply_app.duckdb
         - SECRET_KEY=de4fcb65-beb9-426b-8cc5-8130f77d27a3
       volumes:
-        - ./data:/app/data
-        - ./logs:/app/logs
+        - ./data:/data
+        - ./logs:/logs
 
   postgres:
     image: postgres:13

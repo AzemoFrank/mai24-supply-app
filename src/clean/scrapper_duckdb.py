@@ -193,11 +193,11 @@ def scrapper_second_phase(df_liens_filtre, date_actuelle):
 
     
     print("------------------------------------------------------------------------")
-    print('#### Résultats: données brutes scrapées:', file=open("/app/logs/scrapper_logs.txt", "a"))
+    print('#### Résultats: données brutes scrapées:', file=open("/logs/scrapper_logs.txt", "a"))
     print("Voici le Dataframe des données brutes scrapées (données non traitées). \nD'après ce que nous voyons ci-dessus, les données scrapées nécessitent un traitement supplémentaire avec text mining. Nous allons aussi procéder à la création de nouvelles features engineering.")
     print(con.execute("SELECT categorie_bis, COUNT(*) FROM data_scrapped_brut WHERE date_scrap = ? GROUP BY categorie_bis", [date_actuelle]).fetchdf())
     print(f"La taille du df brut: {con.execute('SELECT COUNT(*) FROM data_scrapped_brut WHERE date_scrap = ? ', [date_actuelle]).fetchone()[0]}")
-    print(f"Webscraping terminé le: {date_actuelle}", file=open("/app/logs/scrapper_logs.txt", "a"))
+    print(f"Webscraping terminé le: {date_actuelle}", file=open("/logs/scrapper_logs.txt", "a"))
     print(f"Webscraping terminé le: {date_actuelle}")
 
     # Fermeture de la connexion
@@ -215,8 +215,8 @@ def main_scrapper():
         con = duckdb.connect(db_file)
         con.close()
     
-    if not os.path.exists("/app/logs/scrapper_logs.txt"):
-        open("/app/logs/scrapper_logs.txt", 'a').close()
+    if not os.path.exists("/logs/scrapper_logs.txt"):
+        open("/logs/scrapper_logs.txt", 'a').close()
 
     date_actuelle = datetime.now().strftime("%Y-%m-%d")
     
