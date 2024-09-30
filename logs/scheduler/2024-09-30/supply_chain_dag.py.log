@@ -2553,3 +2553,346 @@
 [2024-09-30T18:56:34.192+0000] {logging_mixin.py:188} INFO - [2024-09-30T18:56:34.192+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2024-09-30T18:56:34.224+0000] {logging_mixin.py:188} INFO - [2024-09-30T18:56:34.223+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
 [2024-09-30T18:56:34.280+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.126 seconds
+[2024-09-30T23:00:38.466+0000] {processor.py:161} INFO - Started process (PID=97) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:00:38.468+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:00:38.473+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:00:38.472+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:00:38.551+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:00:39.226+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:00:39.226+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:00:39.299+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:00:39.298+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:00:39.362+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.907 seconds
+[2024-09-30T23:01:09.650+0000] {processor.py:161} INFO - Started process (PID=163) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:01:09.659+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:01:09.688+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:01:09.681+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:01:09.792+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:01:10.128+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:01:10.127+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:01:10.553+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:01:10.546+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:01:10.794+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 1.185 seconds
+[2024-09-30T23:01:41.176+0000] {processor.py:161} INFO - Started process (PID=229) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:01:41.178+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:01:41.182+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:01:41.181+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:01:41.199+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:01:41.239+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:01:41.238+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:01:41.292+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:01:41.292+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:01:41.330+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.161 seconds
+[2024-09-30T23:02:11.444+0000] {processor.py:161} INFO - Started process (PID=295) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:02:11.446+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:02:11.449+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:02:11.448+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:02:11.463+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:02:11.499+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:02:11.498+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:02:11.541+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:02:11.540+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:02:11.572+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.134 seconds
+[2024-09-30T23:02:41.687+0000] {processor.py:161} INFO - Started process (PID=361) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:02:41.689+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:02:41.692+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:02:41.691+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:02:41.703+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:02:41.730+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:02:41.730+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:02:41.762+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:02:41.762+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:02:41.789+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.106 seconds
+[2024-09-30T23:03:12.318+0000] {processor.py:161} INFO - Started process (PID=427) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:03:12.320+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:03:12.322+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:03:12.322+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:03:12.332+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:03:12.361+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:03:12.361+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:03:12.392+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:03:12.391+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:03:12.420+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.106 seconds
+[2024-09-30T23:03:42.548+0000] {processor.py:161} INFO - Started process (PID=493) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:03:42.551+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:03:42.554+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:03:42.554+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:03:42.572+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:03:42.620+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:03:42.619+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:03:42.740+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:03:42.739+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:03:42.854+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.312 seconds
+[2024-09-30T23:04:13.174+0000] {processor.py:161} INFO - Started process (PID=558) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:04:13.184+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:04:13.199+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:04:13.196+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:04:13.300+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:04:13.624+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:04:13.622+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:04:14.131+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:04:14.128+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:04:14.383+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 1.237 seconds
+[2024-09-30T23:04:44.525+0000] {processor.py:161} INFO - Started process (PID=614) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:04:44.527+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:04:44.532+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:04:44.532+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:04:44.550+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:04:44.594+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:04:44.593+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:04:44.649+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:04:44.648+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:04:44.690+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.172 seconds
+[2024-09-30T23:05:15.185+0000] {processor.py:161} INFO - Started process (PID=680) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:05:15.191+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:05:15.198+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:05:15.197+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:05:15.249+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:05:15.398+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:05:15.396+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:05:15.619+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:05:15.617+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:05:15.759+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.590 seconds
+[2024-09-30T23:05:46.662+0000] {processor.py:161} INFO - Started process (PID=746) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:05:46.665+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:05:46.669+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:05:46.668+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:05:46.688+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:05:46.736+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:05:46.735+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:05:46.795+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:05:46.795+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:05:46.839+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.184 seconds
+[2024-09-30T23:06:17.110+0000] {processor.py:161} INFO - Started process (PID=812) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:06:17.113+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:06:17.117+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:06:17.117+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:06:17.137+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:06:17.176+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:06:17.176+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:06:17.221+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:06:17.221+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:06:17.256+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.152 seconds
+[2024-09-30T23:06:47.483+0000] {processor.py:161} INFO - Started process (PID=878) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:06:47.486+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:06:47.491+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:06:47.491+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:06:47.517+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:06:47.581+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:06:47.581+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:06:47.685+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:06:47.684+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:06:47.754+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.284 seconds
+[2024-09-30T23:07:18.568+0000] {processor.py:161} INFO - Started process (PID=944) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:07:18.573+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:07:18.577+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:07:18.576+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:07:18.592+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:07:18.628+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:07:18.627+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:07:18.676+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:07:18.676+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:07:18.713+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.151 seconds
+[2024-09-30T23:07:49.108+0000] {processor.py:161} INFO - Started process (PID=1011) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:07:49.111+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:07:49.114+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:07:49.113+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:07:49.129+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:07:49.166+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:07:49.166+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:07:49.214+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:07:49.214+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:07:49.251+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.149 seconds
+[2024-09-30T23:08:19.661+0000] {processor.py:161} INFO - Started process (PID=1077) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:08:19.663+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:08:19.666+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:08:19.666+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:08:19.681+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:08:19.718+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:08:19.717+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:08:19.767+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:08:19.766+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:08:19.808+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.153 seconds
+[2024-09-30T23:08:50.001+0000] {processor.py:161} INFO - Started process (PID=1143) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:08:50.003+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:08:50.006+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:08:50.006+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:08:50.021+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:08:50.057+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:08:50.057+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:08:50.100+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:08:50.100+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:08:50.132+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.137 seconds
+[2024-09-30T23:09:20.752+0000] {processor.py:161} INFO - Started process (PID=1209) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:09:20.753+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:09:20.756+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:09:20.756+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:09:20.768+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:09:20.800+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:09:20.800+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:09:20.838+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:09:20.838+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:09:20.868+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.121 seconds
+[2024-09-30T23:09:51.583+0000] {processor.py:161} INFO - Started process (PID=1275) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:09:51.585+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:09:51.587+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:09:51.587+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:09:51.599+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:09:51.628+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:09:51.628+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:09:51.662+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:09:51.661+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:09:51.692+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.113 seconds
+[2024-09-30T23:10:22.079+0000] {processor.py:161} INFO - Started process (PID=1349) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:10:22.081+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:10:22.085+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:10:22.084+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:10:22.100+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:10:22.137+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:10:22.137+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:10:22.189+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:10:22.189+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:10:22.225+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.152 seconds
+[2024-09-30T23:10:52.555+0000] {processor.py:161} INFO - Started process (PID=1415) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:10:52.557+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:10:52.561+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:10:52.560+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:10:52.577+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:10:52.618+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:10:52.617+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:10:52.664+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:10:52.664+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:10:52.701+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.152 seconds
+[2024-09-30T23:11:22.942+0000] {processor.py:161} INFO - Started process (PID=1481) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:11:22.944+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:11:22.948+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:11:22.947+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:11:22.965+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:11:23.007+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:11:23.007+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:11:23.058+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:11:23.058+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:11:23.103+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.168 seconds
+[2024-09-30T23:11:53.782+0000] {processor.py:161} INFO - Started process (PID=1546) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:11:53.784+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:11:53.787+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:11:53.786+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:11:53.801+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:11:53.837+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:11:53.836+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:11:53.882+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:11:53.882+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:11:53.917+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.141 seconds
+[2024-09-30T23:12:24.137+0000] {processor.py:161} INFO - Started process (PID=1612) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:12:24.140+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:12:24.143+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:12:24.142+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:12:24.159+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:12:24.200+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:12:24.199+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:12:24.257+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:12:24.256+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:12:24.297+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.169 seconds
+[2024-09-30T23:12:54.541+0000] {processor.py:161} INFO - Started process (PID=1678) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:12:54.543+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:12:54.547+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:12:54.546+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:12:54.563+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:12:54.603+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:12:54.603+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:12:54.650+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:12:54.650+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:12:54.691+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.157 seconds
+[2024-09-30T23:13:25.089+0000] {processor.py:161} INFO - Started process (PID=1744) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:13:25.090+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:13:25.092+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:13:25.092+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:13:25.104+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:13:25.131+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:13:25.130+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:13:25.161+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:13:25.161+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:13:25.190+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.106 seconds
+[2024-09-30T23:13:55.586+0000] {processor.py:161} INFO - Started process (PID=1810) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:13:55.588+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:13:55.590+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:13:55.590+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:13:55.601+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:13:55.629+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:13:55.628+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:13:55.663+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:13:55.663+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:13:55.693+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.111 seconds
+[2024-09-30T23:14:25.858+0000] {processor.py:161} INFO - Started process (PID=1876) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:14:25.869+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:14:25.873+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:14:25.872+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:14:25.891+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:14:25.938+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:14:25.938+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:14:25.989+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:14:25.989+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:14:26.032+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.181 seconds
+[2024-09-30T23:14:56.154+0000] {processor.py:161} INFO - Started process (PID=1942) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:14:56.158+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:14:56.161+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:14:56.161+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:14:56.181+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:14:56.217+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:14:56.216+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:14:56.267+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:14:56.267+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:14:56.305+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.157 seconds
+[2024-09-30T23:15:26.975+0000] {processor.py:161} INFO - Started process (PID=2008) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:15:26.977+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:15:26.980+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:15:26.979+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:15:26.992+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:15:27.020+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:15:27.019+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:15:27.052+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:15:27.052+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:15:27.087+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.118 seconds
+[2024-09-30T23:15:57.225+0000] {processor.py:161} INFO - Started process (PID=2074) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:15:57.227+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:15:57.231+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:15:57.230+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:15:57.246+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:15:57.285+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:15:57.285+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:15:57.332+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:15:57.332+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:15:57.368+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.149 seconds
+[2024-09-30T23:16:27.993+0000] {processor.py:161} INFO - Started process (PID=2140) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:16:27.996+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:16:27.998+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:16:27.998+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:16:28.011+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:16:28.042+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:16:28.042+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:16:28.078+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:16:28.078+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:16:28.106+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.119 seconds
+[2024-09-30T23:16:58.485+0000] {processor.py:161} INFO - Started process (PID=2206) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:16:58.487+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:16:58.490+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:16:58.489+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:16:58.502+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:16:58.534+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:16:58.534+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:16:58.570+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:16:58.570+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:16:58.598+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.117 seconds
+[2024-09-30T23:17:28.870+0000] {processor.py:161} INFO - Started process (PID=2272) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:17:28.871+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:17:28.873+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:17:28.873+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:17:28.885+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:17:28.921+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:17:28.920+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:17:28.962+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:17:28.961+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:17:28.989+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.123 seconds
+[2024-09-30T23:17:59.537+0000] {processor.py:161} INFO - Started process (PID=2346) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:17:59.540+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:17:59.545+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:17:59.544+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:17:59.564+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:17:59.604+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:17:59.603+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:17:59.657+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:17:59.656+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:17:59.697+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.170 seconds
+[2024-09-30T23:18:29.939+0000] {processor.py:161} INFO - Started process (PID=2405) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:18:29.941+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:18:29.944+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:18:29.944+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:18:29.959+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:18:29.994+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:18:29.994+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:18:30.034+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:18:30.034+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:18:30.063+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.134 seconds
+[2024-09-30T23:19:00.542+0000] {processor.py:161} INFO - Started process (PID=2480) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:19:00.545+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:19:00.551+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:19:00.549+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:19:00.573+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:19:00.626+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:19:00.625+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:19:00.697+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:19:00.697+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:19:01.019+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.484 seconds
+[2024-09-30T23:19:31.238+0000] {processor.py:161} INFO - Started process (PID=2544) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:19:31.240+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:19:31.245+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:19:31.244+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:19:31.268+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:19:31.305+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:19:31.305+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:19:31.350+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:19:31.349+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:19:31.389+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.158 seconds
+[2024-09-30T23:20:01.829+0000] {processor.py:161} INFO - Started process (PID=2610) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:20:01.832+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:20:01.836+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:20:01.835+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:20:01.856+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:20:01.904+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:20:01.904+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:20:01.967+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:20:01.967+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:20:02.010+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.189 seconds
+[2024-09-30T23:20:32.092+0000] {processor.py:161} INFO - Started process (PID=2675) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:20:32.094+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:20:32.097+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:20:32.096+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:20:32.112+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:20:32.148+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:20:32.147+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:20:32.207+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:20:32.206+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:20:32.251+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.165 seconds
+[2024-09-30T23:21:03.161+0000] {processor.py:161} INFO - Started process (PID=2734) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:21:03.165+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:21:03.172+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:21:03.171+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:21:03.205+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:21:03.282+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:21:03.281+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:21:03.384+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:21:03.383+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:21:03.452+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.304 seconds
+[2024-09-30T23:21:33.649+0000] {processor.py:161} INFO - Started process (PID=2800) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:21:33.652+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:21:33.657+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:21:33.656+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:21:33.681+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:21:33.742+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:21:33.741+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:21:34.356+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:21:34.355+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:21:34.447+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.807 seconds
+[2024-09-30T23:22:04.523+0000] {processor.py:161} INFO - Started process (PID=2866) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:22:04.526+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:22:04.532+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:22:04.531+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:22:04.559+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:22:04.621+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:22:04.621+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:22:05.039+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:22:05.039+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:22:05.103+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.591 seconds
+[2024-09-30T23:22:35.581+0000] {processor.py:161} INFO - Started process (PID=2933) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:22:35.584+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:22:35.592+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:22:35.590+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:22:35.620+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:22:35.684+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:22:35.683+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:22:35.768+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:22:35.767+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:22:35.844+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.273 seconds
+[2024-09-30T23:23:06.117+0000] {processor.py:161} INFO - Started process (PID=2991) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:23:06.118+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:23:06.121+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:23:06.121+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:23:06.133+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:23:06.161+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:23:06.161+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:23:06.197+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:23:06.197+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:23:06.229+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.118 seconds
+[2024-09-30T23:23:21.323+0000] {processor.py:161} INFO - Started process (PID=3022) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:23:21.325+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:23:21.329+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:23:21.328+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:23:21.348+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:23:21.545+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:23:21.545+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:23:21.590+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:23:21.589+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:23:21.631+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.314 seconds
+[2024-09-30T23:23:51.858+0000] {processor.py:161} INFO - Started process (PID=3088) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:23:51.864+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:23:51.876+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:23:51.874+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:23:51.926+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:23:52.056+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:23:52.055+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:23:52.301+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:23:52.299+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:23:52.411+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.575 seconds
+[2024-09-30T23:24:23.214+0000] {processor.py:161} INFO - Started process (PID=3153) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:24:23.218+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:24:23.222+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:24:23.221+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:24:23.238+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:24:23.281+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:24:23.280+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:24:23.341+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:24:23.340+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:24:23.399+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.192 seconds
+[2024-09-30T23:24:53.449+0000] {processor.py:161} INFO - Started process (PID=3211) to work on /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:24:53.451+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/supply_chain_dag.py for tasks to queue
+[2024-09-30T23:24:53.454+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:24:53.453+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:24:53.467+0000] {processor.py:840} INFO - DAG(s) 'supply_app_dag' retrieved from /opt/airflow/dags/supply_chain_dag.py
+[2024-09-30T23:24:53.498+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:24:53.498+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-09-30T23:24:53.537+0000] {logging_mixin.py:188} INFO - [2024-09-30T23:24:53.537+0000] {dag.py:3823} INFO - Setting next_dagrun for supply_app_dag to 2024-09-30 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-09-30T23:24:53.565+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/supply_chain_dag.py took 0.122 seconds

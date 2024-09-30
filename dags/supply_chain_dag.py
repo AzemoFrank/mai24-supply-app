@@ -3,7 +3,7 @@ from airflow.providers.docker.operators.docker import DockerOperator
 from datetime import datetime
 
 # Définir le chemin vers les scripts
-script_path = "/app/data"  # Chemin dans le conteneur
+script_path = "scripts/"  # Chemin dans le conteneur
 
 with DAG(
     'supply_app_dag',
