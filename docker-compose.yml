@@ -65,6 +65,7 @@ x-airflow-common: &airflow-common
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
+    - ./data:/opt/airflow/data
     - /var/run/docker.sock:/var/run/docker.sock
   user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-50000}"
   depends_on:
@@ -86,9 +87,6 @@ services:
         - CLEAN_A_LOGS_PATH=/supply_app/logs/clean_a_logs.txt
         - CLEAN_B_LOGS_PATH=/supply_app/logs/clean_b_logs.txt
         - TRAIN_LOGS_PATH=/supply_app/logs/resultats_train.txt
-      volumes:
-        - ./data:/data
-        - ./logs:/logs
   
   web_supply_app:
       build:

@@ -1,0 +1,47 @@
+[2024-10-01T01:06:39.513+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: supply_app_dag.scrapper_duckdb manual__2024-09-30T23:04:54.068728+00:00 [queued]>
+[2024-10-01T01:06:39.583+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: supply_app_dag.scrapper_duckdb manual__2024-09-30T23:04:54.068728+00:00 [queued]>
+[2024-10-01T01:06:39.585+0000] {taskinstance.py:2170} INFO - Starting attempt 8 of 8
+[2024-10-01T01:06:39.688+0000] {taskinstance.py:2191} INFO - Executing <Task(DockerOperator): scrapper_duckdb> on 2024-09-30 23:04:54.068728+00:00
+[2024-10-01T01:06:39.733+0000] {standard_task_runner.py:60} INFO - Started process 822 to run task
+[2024-10-01T01:06:39.770+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'supply_app_dag', 'scrapper_duckdb', 'manual__2024-09-30T23:04:54.068728+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/supply_chain_dag.py', '--cfg-path', '/tmp/tmpm3pzh66k']
+[2024-10-01T01:06:39.816+0000] {standard_task_runner.py:88} INFO - Job 16: Subtask scrapper_duckdb
+[2024-10-01T01:06:40.065+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-10-01T01:06:40.317+0000] {task_command.py:423} INFO - Running <TaskInstance: supply_app_dag.scrapper_duckdb manual__2024-09-30T23:04:54.068728+00:00 [running]> on host e7792c503d11
+[2024-10-01T01:06:41.185+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='supply_app_dag' AIRFLOW_CTX_TASK_ID='scrapper_duckdb' AIRFLOW_CTX_EXECUTION_DATE='2024-09-30T23:04:54.068728+00:00' AIRFLOW_CTX_TRY_NUMBER='8' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-30T23:04:54.068728+00:00'
+[2024-10-01T01:06:41.371+0000] {docker.py:359} INFO - Starting docker container from image schedul_supply_app
+[2024-10-01T01:06:41.400+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 265, in _raise_for_status
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http+docker://localhost/v1.43/containers/create
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 502, in execute
+    return self._run_image()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 364, in _run_image
+    return self._run_image_with_mounts([*self.mounts, tmp_mount], add_tmp_variable=True)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 391, in _run_image_with_mounts
+    self.container = self.cli.create_container(
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/container.py", line 439, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/container.py", line 456, in create_container_from_config
+    return self._result(res, True)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 271, in _result
+    self._raise_for_status(response)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 267, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 400 Client Error for http+docker://localhost/v1.43/containers/create: Bad Request ("invalid mount config for type "bind": bind source path does not exist: /home/ubuntu/airflow/data")
+[2024-10-01T01:06:41.448+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=supply_app_dag, task_id=scrapper_duckdb, execution_date=20240930T230454, start_date=20241001T010639, end_date=20241001T010641
+[2024-10-01T01:06:41.507+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 16 for task scrapper_duckdb (400 Client Error for http+docker://localhost/v1.43/containers/create: Bad Request ("invalid mount config for type "bind": bind source path does not exist: /home/ubuntu/airflow/data"); 822)
+[2024-10-01T01:06:41.556+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-10-01T01:06:41.649+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
