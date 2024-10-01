@@ -80,8 +80,12 @@ services:
         dockerfile: DockerFile.airflow
       image: schedul_supply_app:latest
       environment:
-        - SCRAPPER_JSON_OUTPUT_PATH=/data/scrapping_output.json
-        - DUCKDB_PATH=/data/supply_app.duckdb
+        - SCRAPPER_JSON_OUTPUT_PATH=/supply_app/data/scrapping_output.json
+        - DUCKDB_PATH=/supply_app/data/supply_app.duckdb
+        - SCRAPPER_LOGS_PATH=/supply_app/logs/scrapper_logs.txt
+        - CLEAN_A_LOGS_PATH=/supply_app/logs/clean_a_logs.txt
+        - CLEAN_B_LOGS_PATH=/supply_app/logs/clean_b_logs.txt
+        - TRAIN_LOGS_PATH=/supply_app/logs/resultats_train.txt
       volumes:
         - ./data:/data
         - ./logs:/logs
@@ -95,13 +99,18 @@ services:
         - "8000:8000"
       environment:
         - PORT=8000
-        - SCRAPPER_JSON_OUTPUT_PATH=/data/scrapping_output.json
-        - USERS_JSON_FILE_PATH=/data/users.json
-        - DUCKDB_PATH=/data/supply_app.duckdb
+        - SCRAPPER_JSON_OUTPUT_PATH=/supply_app/data/scrapping_output.json
+        - USERS_JSON_FILE_PATH=/supply_app/data/users.json
+        - DUCKDB_PATH=/supply_app/data/supply_app.duckdb
+        - SCRAPPER_LOGS_PATH=/supply_app/logs/scrapper_logs.txt
+        - CLEAN_A_LOGS_PATH=/supply_app/logs/clean_a_logs.txt
+        - CLEAN_B_LOGS_PATH=/supply_app/logs/clean_b_logs.txt
+        - TRAIN_LOGS_PATH=/supply_app/logs/resultats_train.txt
+        - API_LOGS_PATH=/supply_app/logs/log_app_api.txt
         - SECRET_KEY=de4fcb65-beb9-426b-8cc5-8130f77d27a3
       volumes:
-        - ./data:/data
-        - ./logs:/logs
+        - ./data:/supply_app/data
+        - ./logs:/supply_app/logs
 
   postgres:
     image: postgres:13

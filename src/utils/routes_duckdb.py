@@ -162,9 +162,9 @@ async def train(current_user: UserOut = Depends(get_current_user)):
     try:
         # Appel de la fonction d'entraînement
         resultats = train_model()
-        
+        log_file = os.getenv('API_LOGS_PATH', '/logs/log_app_api.txt')
         # Log message après succès de l'entraînement
-        with open("/logs/log_app_api.txt", "a") as fichier:
+        with open(log_file, "a") as fichier:
             print("Entraînement des données terminé avec succès.", file=fichier)
             print("Utilisateur:", current_user.username, "Date:", datetime.now(), file=fichier)
 

@@ -44,7 +44,7 @@ def f_data_clean_2():
     if not date_scrap_filter:
         raise ValueError("La valeur 'date_scrap_filter' n'a pas ete trouvee dans le fichier JSON.")
 
-    log_file = "/logs/clean_b_logs.txt"
+    log_file = os.getenv('CLEAN_B_LOGS_PATH', '/logs/clean_b_logs.txt')
     fichier_c = open(log_file, "a")
     print("------------- début clean data: features engineering -----------------", file=fichier_c)
 

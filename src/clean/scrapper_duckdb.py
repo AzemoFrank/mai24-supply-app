@@ -85,7 +85,7 @@ def scrapper_first_phase(url: str, date_actuelle:str):
 
     return result
 
-def scrapper_second_phase(df_liens_filtre, date_actuelle):
+def scrapper_second_phase(df_liens_filtre, date_actuelle, log_file):
     """Deuxième phase de scraping pour les détails des avis clients."""
 
     tout, noms, date_commentaire, date_experience, notes, titre_com, companies, reponses = [], [], [], [], [], [], [], []
@@ -193,11 +193,11 @@ def scrapper_second_phase(df_liens_filtre, date_actuelle):
 
     
     print("------------------------------------------------------------------------")
-    print('#### Résultats: données brutes scrapées:', file=open("/logs/scrapper_logs.txt", "a"))
+    print('#### Résultats: données brutes scrapées:', file=open(log_file, "a"))
     print("Voici le Dataframe des données brutes scrapées (données non traitées). \nD'après ce que nous voyons ci-dessus, les données scrapées nécessitent un traitement supplémentaire avec text mining. Nous allons aussi procéder à la création de nouvelles features engineering.")
     print(con.execute("SELECT categorie_bis, COUNT(*) FROM data_scrapped_brut WHERE date_scrap = ? GROUP BY categorie_bis", [date_actuelle]).fetchdf())
     print(f"La taille du df brut: {con.execute('SELECT COUNT(*) FROM data_scrapped_brut WHERE date_scrap = ? ', [date_actuelle]).fetchone()[0]}")
-    print(f"Webscraping terminé le: {date_actuelle}", file=open("/logs/scrapper_logs.txt", "a"))
+    print(f"Webscraping terminé le: {date_actuelle}", file=open(log_file, "a"))
     print(f"Webscraping terminé le: {date_actuelle}")
 
     # Fermeture de la connexion
@@ -215,8 +215,9 @@ def main_scrapper():
         con = duckdb.connect(db_file)
         con.close()
     
-    if not os.path.exists("/logs/scrapper_logs.txt"):
-        open("/logs/scrapper_logs.txt", 'a').close()
+    log_file = os.getenv('SCRAPPER_LOGS_PATH', '/logs/scrapper_logs.txt')
+    if not os.path.exists(log_file):
+        open(log_file, 'a').close()
 
     date_actuelle = datetime.now().strftime("%Y-%m-%d")
     
@@ -225,7 +226,7 @@ def main_scrapper():
     df_liens = scrapper_first_phase(url, date_actuelle)
 
     # Étape 2 : Scraping des avis clients avec les données obtenues de la première phase
-    sample_data = scrapper_second_phase(df_liens, date_actuelle)
+    sample_data = scrapper_second_phase(df_liens, date_actuelle, log_file)
 
     # Écriture de la date_actuelle dans un fichier JSON
     json_file_path = os.getenv('SCRAPPER_JSON_OUTPUT_PATH', 'data/scrapping_output.json')
